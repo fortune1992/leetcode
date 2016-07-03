@@ -48,7 +48,7 @@ public class Solution {
         Stack<String> stack = new Stack<String>();
         for (int i=0; i<split.length; i++){
             String cur = split[i];
-            while (cur.equals("#") && !stack.empty() && stack.peek().equals("#")) {
+            while (cur.equals("#") && !stack.empty() && stack.peek().equals("#")) {//注意此处是while循环！
                 stack.pop();
                 if (stack.empty()){//出现这种情况直接返回false "#,#", "#,#,#"
                     return false;
