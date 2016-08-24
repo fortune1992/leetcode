@@ -26,7 +26,7 @@ public class Solution {
         for (int i=1; i<n; i++){
             int min = Integer.MAX_VALUE;
             for (int j=0; j<len; j++){
-                min = Math.min(dp[index[j]]*primes[j], min);
+                min = Math.min(dp[index[j]]*primes[j], min);// 每次找到最小的丑数
             }
             dp[i] = min;
             for (int j=0; j<len; j++){
