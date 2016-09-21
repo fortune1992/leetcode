@@ -31,7 +31,7 @@ public class Solution {
             second = second.next.next;
             if (first == second){// 出现环！不一定是环的起始点，需要判断！
                 ListNode p = head;
-                ListNode q = first;
+                ListNode q = second;
                 while (p!=q){
                     p = p.next;
                     q = q.next;
